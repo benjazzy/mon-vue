@@ -141,7 +141,7 @@ export default {
 
   mounted: function () {
     ws.addEventListener((message) => {
-      console.log(message.data)
+      // console.log(message.data)
       if (message.data.charAt(0) === '{') {
         let m = message.data.replace(/\//g, '')
         this.clients = []
@@ -166,14 +166,6 @@ export default {
       }
       else {
         console.log("Error message " + message.data + " is not valid json")
-        // let splitMessage = message.data.split(' ')
-        // if (splitMessage.length === 2) {
-        //   for (const value of this.clients) {
-        //     if (value.hostname === splitMessage[0]) {
-        //       value.inConfig = (splitMessage[1] === 'true')
-        //     }
-        //   }
-        // }
       }
     })
 

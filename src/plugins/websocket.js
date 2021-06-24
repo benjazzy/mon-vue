@@ -1,5 +1,5 @@
 let ws = undefined;
-const serverIP = 'localhost';
+const serverIP = '192.168.1.51';
 const port = 8081;
 const endpoint = "/send"
 
