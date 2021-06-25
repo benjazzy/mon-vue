@@ -1,6 +1,6 @@
 let ws = undefined;
 const serverIP = '192.168.1.51';
-const port = 8081;
+const port = 8080;
 const endpoint = "/send"
 
 let callback = undefined
